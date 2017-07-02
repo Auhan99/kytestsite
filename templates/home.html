@@ -1,0 +1,12 @@
+<h3>{{title}}</h3> <h1></h1>
+{{uname}}
+<form action='/logged_in'>
+{{forms.as_p}}
+
+<input type ="Submit" value='SignUp'>
+
+ <a href="{% url 'social:begin' 'google-oauth2' %}">Login with Google</a><br>
+ <a href="{% url 'social:begin' 'facebook' %}">Login with facebook</a><br>
+
+
+</form>
